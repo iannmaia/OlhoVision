@@ -17,6 +17,9 @@ function App() {
       return <Vendas />;
     }
 
+    if (currentPage === "analise") {
+      return <AnaliseDeLentes />;
+    }
     return (
       <div className="ml-64 p-8">
         <h1 className="text-2xl text-gray-900 mb-2">Início</h1>
