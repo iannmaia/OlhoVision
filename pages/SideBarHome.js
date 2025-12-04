@@ -28,7 +28,6 @@ function SideBarHome({ currentPage, onChangePage }) {
 
   return (
     <>
-      {/* Botão Hamburguer (mobile) */}
       {!isSidebarVisible && (
         <button
           className="fixed top-4 left-4 z-50 bg-white shadow-md p-2 rounded-md sm:hidden"
@@ -37,8 +36,7 @@ function SideBarHome({ currentPage, onChangePage }) {
           ☰
         </button>
       )}
-
-      {/* Sidebar */}
+      
       <aside
         className={`fixed left-0 top-0 h-screen ${
           isSidebarVisible ? "w-64" : "w-0"
