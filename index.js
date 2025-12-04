@@ -20,6 +20,11 @@ function App() {
     if (currentPage === "analise") {
       return <AnaliseDeLentes />;
     }
+
+    if (currentPage === "atendimento") {
+      return <FluxoAtendimento />;
+    }
+    
     return (
       <div className="ml-64 p-8">
         <h1 className="text-2xl text-gray-900 mb-2">Início</h1>
