@@ -1,7 +1,7 @@
 const menuItems = [
   { id: "inicio", name: "Início" },
-  { id: "vendas", name: "Vendas" },
   { id: "simulacao", name: "Simulação em 3D" },
+  { id: "vendas", name: "Vendas" },
   { id: "analise", name: "Analise de Lentes" },
   { id: "atendimento", name: "Atendimento" },
 ];
@@ -28,7 +28,6 @@ function SideBarHome({ currentPage, onChangePage }) {
 
   return (
     <>
-      {/* Botão Hamburguer (mobile) */}
       {!isSidebarVisible && (
         <button
           className="fixed top-4 left-4 z-50 bg-white shadow-md p-2 rounded-md sm:hidden"
@@ -38,7 +37,6 @@ function SideBarHome({ currentPage, onChangePage }) {
         </button>
       )}
 
-      {/* Sidebar */}
       <aside
         className={`fixed left-0 top-0 h-screen ${
           isSidebarVisible ? "w-64" : "w-0"
@@ -47,7 +45,7 @@ function SideBarHome({ currentPage, onChangePage }) {
         <div className="p-6 border-b border-gray-200">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center">
-              <span className="text-white">👓</span>
+              <span className="text-white"></span>
             </div>
             <div>
               <h1 className="text-gray-900 text-lg font-semibold">Olho Vision</h1>
